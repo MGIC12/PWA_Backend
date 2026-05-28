@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -13,16 +15,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/MGIC12/PWA_Backend/issues"
   },
   "homepage": "https://github.com/MGIC12/PWA_Backend#readme",
   "dependencies": {
+    "@prisma/client": "^7.8.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@types/node": "^25.9.1",
+    "nodemon": "^3.1.14",
+    "prisma": "^7.8.0"
   }
 }
